@@ -1,69 +1,78 @@
-TruthLens – AI-Based Fake News Detection
+🔍 TruthLens – AI-Powered Fake News Detection
 
-TruthLens is an AI-powered Fake News Detection and Fact-Checking web application built using Python and Streamlit.
+📌 About the Project
 
-Project Overview
+TruthLens is a machine learning-based web application that helps users analyze news articles and identify potentially fake or real news.
 
-The main objective of TruthLens is to identify whether a given news article is likely to be Fake or Real using Machine Learning techniques.
+It also searches for existing fact-check reports using the Google Fact Check Tools API.
 
-It also integrates Google Fact Check Tools API to help users find relevant fact-check reports.
+✨ Features
 
-Features
-
-- Fake and Real News Classification
-- TF-IDF Text Feature Extraction
-- Logistic Regression Machine Learning Model
+- Fake and Real News Prediction
+- Machine Learning-based Classification
+- TF-IDF Text Vectorization
 - Google Fact Check API Integration
-- Prediction Confidence Display
-- User-Friendly Streamlit Interface
+- Prediction Confidence Scores
 - Prediction History
+- Interactive Streamlit Interface
 
-Technologies Used
+🛠️ Technologies Used
 
 - Python
 - Streamlit
 - Pandas
 - NumPy
 - Scikit-learn
-- TF-IDF
 - Logistic Regression
+- TF-IDF
 - Google Fact Check Tools API
 
-Project Structure
+📂 Project Structure
 
 TruthLens/
+│
 ├── app.py
 ├── main.py
-├── requirements.txt
 ├── model.pkl
 ├── vectorizer.pkl
+├── requirements.txt
 ├── dataset/
 │   ├── Fake.csv
 │   └── True.csv
-└── .gitignore
+└── README.md
 
-Installation
+⚙️ Installation and Setup
 
-1. Clone the repository:
+1. Clone this repository:
 
 git clone https://github.com/kalangigayathri3-web/TruthLens-fake-News-Detection.git
 
-2. Install dependencies:
+2. Open the project folder.
+
+3. Install required packages:
 
 pip install -r requirements.txt
 
-3. Run the application:
+4. Run the application:
 
 streamlit run app.py
 
-Important Note
+🔑 Google Fact Check API
 
-Machine Learning predictions are not guaranteed to be accurate. Always verify important news using reliable sources and fact-check reports.
+Configure your Google Fact Check API key using Streamlit secrets.
 
-Project Purpose
+Create ".streamlit/secrets.toml" and add:
 
-This project is developed for educational purposes to demonstrate Machine Learning, Natural Language Processing, and fact-checking integration.
+GOOGLE_FACT_CHECK_API_KEY = "YOUR_API_KEY"
 
----
+Never upload your actual API key to GitHub.
 
-Developed by: K. Gayathri
+⚠️ Disclaimer
+
+TruthLens is an educational machine learning prototype. Its predictions are not verified facts. Always cross-check news with reliable sources.
+
+👩‍💻 Author
+
+K. Gayathri
+
+B.Tech – Computer Science and Engineering
